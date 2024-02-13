@@ -5,8 +5,8 @@ This repo shows the implementation of the MoLA parameter-efficient tuning in the
 The installation is for Linux
 1. Clone this repository and navigate to MoLA folder
    ```bash
-   git clone https://github.com/GCYZSL/MOLA.git
-   cd MOLA
+   git clone https://github.com/GCYZSL/MoLA.git
+   cd MoLA
    ```
 2. Install dependencies
    ```bash
