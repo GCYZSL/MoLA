@@ -1,5 +1,5 @@
-# MoLA Implementation
-This repo shows the implementation of the MoLA parameter-efficient tuning in the paper **[Higher Layers Need More LoRA Experts](https://arxiv.org/)**.
+# 🐠 MoLA Implementation
+This repo shows the implementation of the MoLA parameter-efficient tuning in the paper **[Higher Layers Need More LoRA Experts](http://arxiv.org/abs/2402.08562)**.
 
 ## Install
 The installation is for Linux
