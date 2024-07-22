@@ -6,9 +6,11 @@ import transformers
 from src.mola_trainer_hacked import Trainer
 from datasets import load_dataset
 from datasets import load_from_disk
-
+##newmodified
+## `prepare_model_for_int8_training` in latest `peft` version is not supported
 from peft import (
-    prepare_model_for_int8_training,
+    # prepare_model_for_int8_training,
+    prepare_model_for_kbit_training
 )
 from src.mola_mapping_hacked import get_peft_model
 from src.mola_lora_hacked import LoraConfig
@@ -195,8 +197,8 @@ def train(
                                                                     user_prompt_len:
                                                                     ]  # could be sped up, probably
         return tokenized_full_prompt
-
-    model = prepare_model_for_int8_training(model)
+    ##newmodified
+    model = prepare_model_for_kbit_training(model)
 
     config = LoraConfig(
         r=lora_r,
